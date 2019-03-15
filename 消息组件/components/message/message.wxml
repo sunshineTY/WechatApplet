@@ -1,0 +1,8 @@
+<view class="_message-box" hidden="{{!isShow}}">
+  <view wx:for="{{msglist}}"
+    wx:key="{{index}}"
+    class="_content{{item.messageAmt ? ' amt' : ''}} {{item.type}}">
+    <text class="iconfont icon-{{item.type}}"></text>
+    <text class="msg">{{item.message}}</text>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="title">消息组件</view>
+  <button data-type="success" data-message="我成功了！" bind:tap="showMessage">成功</button>
+  <button data-type="error" data-message="我失败了！" bind:tap="showMessage">失败</button>
+  <button data-type="info" data-message="这是一段信息。" bind:tap="showMessage">消息</button>
+  <button data-type="warning" data-message="警告，警告！" bind:tap="showMessage">警告</button>
+
+  <message id="message"></message>
+</view>
