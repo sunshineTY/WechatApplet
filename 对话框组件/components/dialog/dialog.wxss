@@ -1,0 +1,76 @@
+._dialog-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, .5);
+  opacity: 0;
+  transition: all .3s;
+}
+._dialog-box.amt {
+  opacity: 1;
+}
+
+._dialog-main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  background: #fff;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+._dialog-title {
+  font-size: 18px;
+  padding: 15px 15px 5px;
+  line-height: 20px;
+}
+._dialog-content {
+  padding: 15px 15px 20px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 16px;
+  color: #888;
+  vertical-align: middel;
+}
+._dialog-content > ._text {
+  display: inline-block;
+  line-height: 30px;
+}
+._dialog-footer {
+  height: 46px;
+  border-top: 1px solid #ccc;
+  overflow: hidden;
+}
+._dialog-footer::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+._dialog-btn {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  box-sizing: border-box;
+  color: #353535;
+  background: #fff;
+  border-radius: 0;
+  border: none;
+  font-size: 17px;
+  line-height: 46px;
+}
+._dialog-btn::after {
+  border:none;
+}
+._dialog-btn:nth-child(2) {
+  border-left: 1px solid #ccc;
+  color: #3CC51F;
+}
+._dialog-btn.is-hover {
+  background: #eee;
+}

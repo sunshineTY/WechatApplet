@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="title">对话框组件</view>
+  <button bind:tap="showDialog1">删除</button>
+
+  <dialog class="dialog1"
+    bind:cancelEvent="cancleFn"
+    bind:confirmEvent="okFn">
+    是否删除？
+  </dialog>
+</view>

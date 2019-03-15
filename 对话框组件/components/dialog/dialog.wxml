@@ -1,0 +1,19 @@
+
+<view class="_dialog-box{{boxAmt ? ' amt' : ''}}" 
+  hidden="{{!isShow}}"
+  bind:animationEnd="cs">
+  <view class="_dialog-main">
+    <view class="_dialog-title">{{title}}</view>
+    <view class="_dialog-content" style="height: {{height}}; line-height: {{height}};">
+      <view class="_text">
+        <slot></slot>
+      </view>
+    </view>
+    <view class="_dialog-footer">
+      <button class="_dialog-btn" hover-class="is-hover"
+        bind:tap="_cancelEvent">{{cancelText}}</button>
+      <button class="_dialog-btn" hover-class="is-hover"
+        bind:tap="_confirmEvent">{{confirmText}}</button>
+    </view>
+  </view>
+</view>
